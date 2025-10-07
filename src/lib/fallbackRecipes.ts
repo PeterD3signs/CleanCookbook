@@ -98,7 +98,7 @@ export const fallbackRecipes: Recipe[] = [
       'Arrange quinoa, chickpeas, spinach, and sweet potato in a bowl.',
       'Drizzle with dressing and serve.'
     ],
-    image: '/images/buddha-bowl.jpg',
+    image: '/images/buddhaBowl.png',
     description: 'Colorful and nutrient-rich vegan bowl packed with flavor.'
   },
   {
@@ -121,7 +121,7 @@ export const fallbackRecipes: Recipe[] = [
       'Toss lettuce with dressing and croutons.',
       'Add chicken and top with Parmesan shavings.'
     ],
-    image: '/images/caesar-salad.jpg',
+    image: '/images/salad.png',
     description: 'Crispy salad with grilled chicken and creamy Caesar dressing.'
   },
   {
