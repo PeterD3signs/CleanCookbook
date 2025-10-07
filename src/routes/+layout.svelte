@@ -3,7 +3,14 @@
 	import "../app.css";
 	import Footer from '../components/Footer.svelte';
 	import Header from '../components/Header.svelte';
+	import { watchOrientation } from '$lib/orientation';
+	import { onMount } from 'svelte';
 	let { children } = $props();
+
+	onMount(() => {
+		const cleanup = watchOrientation();
+		return cleanup;
+	});
 </script>
 
 <svelte:head>
