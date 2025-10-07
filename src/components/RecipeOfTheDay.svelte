@@ -1,6 +1,18 @@
 <script lang="ts">
-	import { isHorizontal } from '../stores/orientation';
-    import FoodCard from './FoodCard.svelte';
+	import { fallbackRecipes } from '$lib/fallbackRecipes';
+	import RecipeCard from './FoodCard.svelte';
+
+	const recipe = fallbackRecipes[0];
 </script>
 
-<FoodCard />
+<!-- concise vertical -->
+<RecipeCard {recipe} />
+
+<!-- expanded vertical -->
+<RecipeCard {recipe} expanded />
+
+<!-- concise horizontal -->
+<RecipeCard {recipe} horizontal />
+
+<!-- expanded horizontal -->
+<RecipeCard {recipe} expanded horizontal />
