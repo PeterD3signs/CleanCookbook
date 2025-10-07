@@ -6,7 +6,7 @@ export const fallbackRecipes: Recipe[] = [
     name: 'Spaghetti Carbonara',
     dishType: 'Dinner',
     meatType: 'Pork',
-    difficulty: 'Fast',
+    difficulty: 'Easy',
     prepTimeMinutes: 25,
     servings: 2,
     ingredients: [
@@ -31,7 +31,7 @@ export const fallbackRecipes: Recipe[] = [
     name: 'Avocado Toast with Poached Egg',
     dishType: 'Breakfast',
     meatType: 'Vegetarian',
-    difficulty: 'Ultra Fast',
+    difficulty: 'Very easy',
     prepTimeMinutes: 10,
     servings: 1,
     ingredients: [
@@ -106,7 +106,7 @@ export const fallbackRecipes: Recipe[] = [
     name: 'Chicken Caesar Salad',
     dishType: 'Salad',
     meatType: 'Chicken',
-    difficulty: 'Fast',
+    difficulty: 'Easy',
     prepTimeMinutes: 20,
     servings: 2,
     ingredients: [
@@ -129,7 +129,7 @@ export const fallbackRecipes: Recipe[] = [
     name: 'Tomato Soup with Basil',
     dishType: 'Soup',
     meatType: 'Vegetarian',
-    difficulty: 'Fast',
+    difficulty: 'Easy',
     prepTimeMinutes: 25,
     servings: 3,
     ingredients: [
@@ -175,7 +175,7 @@ export const fallbackRecipes: Recipe[] = [
     name: 'Chocolate Mug Cake',
     dishType: 'Dessert',
     meatType: 'Vegetarian',
-    difficulty: 'Ultra Fast',
+    difficulty: 'Very easy',
     prepTimeMinutes: 5,
     servings: 1,
     ingredients: [
@@ -198,7 +198,7 @@ export const fallbackRecipes: Recipe[] = [
     name: 'Greek Yogurt Parfait',
     dishType: 'Dessert',
     meatType: 'Vegetarian',
-    difficulty: 'Ultra Fast',
+    difficulty: 'Very easy',
     prepTimeMinutes: 7,
     servings: 1,
     ingredients: [
@@ -213,28 +213,5 @@ export const fallbackRecipes: Recipe[] = [
     ],
     image: '/images/yogurt-parfait.jpg',
     description: 'Light and refreshing dessert or snack.'
-  },
-  {
-    id: 10,
-    name: 'Garlic Butter Shrimp',
-    dishType: 'Dinner',
-    meatType: 'Seafood',
-    difficulty: 'Fast',
-    prepTimeMinutes: 20,
-    servings: 2,
-    ingredients: [
-      { name: 'Shrimp', amount: 250, unit: 'g' },
-      { name: 'Butter', amount: 2, unit: 'tbsp' },
-      { name: 'Garlic', amount: 3, unit: 'cloves' },
-      { name: 'Parsley', amount: 1, unit: 'tbsp' },
-      { name: 'Lemon juice', amount: 1, unit: 'tbsp' }
-    ],
-    steps: [
-      'Melt butter in a pan and sauté garlic.',
-      'Add shrimp and cook until pink.',
-      'Drizzle with lemon juice and sprinkle parsley.'
-    ],
-    image: '/images/shrimp.jpg',
-    description: 'Juicy shrimp in garlic butter sauce.'
   }
 ];

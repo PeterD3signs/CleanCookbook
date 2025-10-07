@@ -23,11 +23,11 @@ export type MeatType =
   | 'None';
 
 export type Difficulty =
-  | 'Ultra Fast'
-  | 'Fast'
+  | 'Very easy'
+  | 'Easy'
   | 'Medium'
-  | 'Slow'
-  | 'Very Slow';
+  | 'Demanding'
+  | 'Very demanding';
 
 export interface Ingredient {
   name: string;
