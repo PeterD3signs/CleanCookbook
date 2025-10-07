@@ -15,7 +15,6 @@
 		</div>
 		<!-- center (only shown in horizontal view)-->
 		<div class="navbar-center">
-			<!-- LOGO -->
 			{#if $isHorizontal}
 				<Logo />
 			{/if}
