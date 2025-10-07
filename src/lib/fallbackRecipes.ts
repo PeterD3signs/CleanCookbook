@@ -167,7 +167,7 @@ export const fallbackRecipes: Recipe[] = [
       'Prepare sauce with yogurt and lime juice.',
       'Assemble tacos with cabbage, fish, and sauce.'
     ],
-    image: '/images/fish-tacos.jpg',
+    image: '/images/fishTacos.png',
     description: 'Crispy fish tacos with fresh slaw and zesty sauce.'
   },
   {
@@ -190,7 +190,7 @@ export const fallbackRecipes: Recipe[] = [
       'Microwave for 1–2 minutes until cooked through.',
       'Let cool slightly before eating.'
     ],
-    image: '/images/mug-cake.jpg',
+    image: '/images/mugCake.png',
     description: 'Quick microwave chocolate dessert for one.'
   },
   {
@@ -211,7 +211,7 @@ export const fallbackRecipes: Recipe[] = [
       'Layer yogurt, granola, and berries in a glass.',
       'Drizzle with honey and serve chilled.'
     ],
-    image: '/images/yogurt-parfait.jpg',
+    image: '/images/yogurt.png',
     description: 'Light and refreshing dessert or snack.'
   }
 ];

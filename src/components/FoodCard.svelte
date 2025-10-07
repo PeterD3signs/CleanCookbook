@@ -4,6 +4,7 @@
 	import HeartIcon from '$lib/assets/icons/heart_icon.svelte';
 	import CartPlusIcon from '$lib/assets/icons/cartPlus_icon.svelte';
 	import ClockIcon from '$lib/assets/icons/clock_icon.svelte';
+	import { openRecipeModal } from '../stores/currentRecipe';
 
 	let { recipe, vSize = 48, hSize = 48 } = $props();
 </script>
@@ -30,7 +31,10 @@
 			</button>
 		</div>
 		<div class="tooltip tooltip-left" data-tip="Recipe details">
-			<button class="btn btn-sm btn-circle btn-ghost text-primary hover:bg-primary hover:text-base-300">
+			<button 
+				class="btn btn-sm btn-circle btn-ghost text-primary hover:bg-primary hover:text-base-300"
+				onclick={() => openRecipeModal(recipe)}
+			>
 				<InfoIcon />
 			</button>
 		</div>
@@ -51,7 +55,7 @@
 		class="absolute items-center gap-[0.5rem] bottom-28 left-2 flex bg-base-200/70 backdrop-blur-md rounded-full p-2 shadow-md z-10 text-primary"
 	>
 		<ClockIcon />
-		<p class="text-sm opacity-70">
+		<p class="text-sm opacity-70 font-bold">
 			{recipe.prepTimeMinutes} min
 		</p>
 	</div>
