@@ -23,7 +23,7 @@ export const fallbackRecipes: Recipe[] = [
       'Combine pasta with pancetta and egg mixture off heat.',
       'Season with black pepper and serve immediately.'
     ],
-    image: '/images/carbonara.jpg',
+    image: '/images/carbonara.png',
     description: 'Classic Italian pasta with eggs, cheese, and pancetta.'
   },
   {
@@ -47,7 +47,7 @@ export const fallbackRecipes: Recipe[] = [
       'Poach egg for 3–4 minutes.',
       'Spread avocado on toast and top with poached egg and chili flakes.'
     ],
-    image: '/images/avocado-toast.jpg',
+    image: '/images/toast.png',
     description: 'Quick and healthy breakfast with creamy avocado and egg.'
   },
   {
@@ -73,7 +73,7 @@ export const fallbackRecipes: Recipe[] = [
       'Stir-fry vegetables, then return beef and combine.',
       'Serve hot with rice.'
     ],
-    image: '/images/beef-stirfry.jpg',
+    image: '/images/stirFry.png',
     description: 'Quick Asian-style stir-fry with tender beef and veggies.'
   },
   {
@@ -144,7 +144,7 @@ export const fallbackRecipes: Recipe[] = [
       'Add tomatoes and broth, simmer 15 min.',
       'Blend until smooth, add basil, and season.'
     ],
-    image: '/images/tomato-soup.jpg',
+    image: '/images/soup.png',
     description: 'Creamy tomato soup perfect for any season.'
   },
   {

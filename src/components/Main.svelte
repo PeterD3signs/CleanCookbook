@@ -1,6 +1,6 @@
 <script lang="ts">
 	import '../app.css';
-	import RecipeOfTheDay from './RecipeOfTheDay.svelte';
+	import RecipeGrid from './RecipeGrid.svelte';
 </script>
 
-<RecipeOfTheDay />
+<RecipeGrid />
