@@ -64,8 +64,8 @@
 					</li>
 				</ul>
 			</div>
-			<!-- Logging in -->
-			<button class="btn btn-ghost hover:text-primary"> log in </button>
+			<!-- Logging in / profile -->
+			<button class="btn btn-ghost hover:text-primary" onclick={() => goto('/auth')}> log in </button>
 		</div>
 	</div>
 </header>

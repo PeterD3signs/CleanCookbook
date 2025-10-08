@@ -1,11 +1,5 @@
 <script>
     let { children } = $props()
-  </script>
+</script>
   
-  <header>
-    <nav>
-      <a href="/">Home</a>
-    </nav>
-  </header>
-  
-  {@render children()}
+{@render children()}
