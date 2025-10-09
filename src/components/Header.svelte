@@ -5,6 +5,8 @@
 	import Logo from './Logo.svelte';
 	import InfoIcon from '$lib/assets/icons/info_icon.svelte';
 	import CloseIcon from '$lib/assets/icons/close_icon.svelte';
+
+	let { userEmailFirstLetter } = $props();
 </script>
 
 <header class="sticky top-0 z-1000">
@@ -12,7 +14,10 @@
 		<!-- start -->
 		<div class="navbar-start pl-[1.2rem]">
 			<!-- About -->
-			<button class="btn btn-ghost hover:text-primary" onclick={() => (page.url.pathname === '/' ? goto('/about') : goto('/')) }>
+			<button
+				class="btn btn-ghost hover:text-primary"
+				onclick={() => (page.url.pathname === '/' ? goto('/about') : goto('/'))}
+			>
 				{#if page.url.pathname === '/'}
 					<InfoIcon />
 				{:else}
@@ -42,7 +47,7 @@
 
 				<ul
 					tabindex="-1"
-					class="dropdown-content menu bg-base-100 rounded-box z-1 pl-0 shadow-sm bg-base-300 border-b border-l border-r"
+					class="dropdown-content menu bg-base-100 rounded-box z-1 pl-0 shadow-sm bg-base-300 border-b border-l border-r border-primary"
 				>
 					<li>
 						<button
@@ -65,7 +70,20 @@
 				</ul>
 			</div>
 			<!-- Logging in / profile -->
-			<button class="btn btn-ghost hover:text-primary" onclick={() => goto('/auth')}> log in </button>
+			{#if userEmailFirstLetter}
+				<div class="tooltip tooltip-bottom" data-tip="Go to profile">
+					<button
+						class="btn btn-circle btn-accent btn-sm text-[1rem]"
+						onclick={() => goto('/auth/private')}
+					>
+						<p>{userEmailFirstLetter}</p>
+					</button>
+				</div>
+			{:else}
+				<button class="btn btn-ghost hover:text-primary" onclick={() => goto('/auth')}>
+					log in
+				</button>
+			{/if}
 		</div>
 	</div>
 </header>
