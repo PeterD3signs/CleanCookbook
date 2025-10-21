@@ -7,6 +7,7 @@
 	import CloseIcon from '$lib/assets/icons/close_icon.svelte';
 
 	let { userEmailFirstLetter } = $props();
+	
 </script>
 
 <header class="sticky top-0 z-1000">
@@ -74,7 +75,7 @@
 				<div class="tooltip tooltip-bottom" data-tip="Go to profile">
 					<button
 						class="btn btn-circle btn-accent btn-sm text-[1rem]"
-						onclick={() => goto('/auth/private')}
+						onclick={() => goto('/private')}
 					>
 						<p>{userEmailFirstLetter}</p>
 					</button>

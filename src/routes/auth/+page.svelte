@@ -44,16 +44,15 @@
 	}
 </script>
 
-<svelte:window bind:innerWidth={windowWidth} bind:innerHeight={windowHeight} />
+<svelte:window bind:innerWidth={windowWidth} bind:innerHeight={windowHeight} onmousemove={handleMouseMove}/>
 
 <div
 	class="flex items-center justify-center bg-base-100 p-10"
-	onmousemove={handleMouseMove}
 	role="none"
 >
+	
 	<form
 		method="POST"
-		action="?/login"
 		class="bg-base-300 p-10 rounded-2xl flex flex-col items-center gap-6 w-96"
 	>
 		<!-- Book Character -->
@@ -67,9 +66,9 @@
 		/>
 
 		<!-- Fail Message -->
-		{#if form?.error || true}
+		{#if form?.error}
 		<div class="absolute w-70 h-20 border border-3 rounded-full right-60 top-35 flex flex-col items-center justify-center bg-base-100 z-10">
-			<p class="text-primary">{form ? form.error : null},</p>
+			<p class="text-primary text-center">{form ? form.error : null},</p>
 			<p class="text-primary">try again.</p>
 		</div>
 		<div class="absolute w-40 h-40 border-b-3 rounded-full top-15 right-110">
@@ -135,26 +134,28 @@
 		{#if signUpActive}
 			<div class="flex gap-4 mt-4 justify-between items-end w-full">
 				<div class="flex gap-4 mt-4 items-end justify-between w-full">
-					<div class="flex flex-col items-left gap-2">
-						<p>my mistake,</p>
-						<button class="btn btn-outline" onclick={() => (signUpActive = false)}> go back</button>
-					</div>
 					<button
-						class="btn btn-primary btn-outline"
+						class="btn btn-primary btn-outline order-2"
 						formaction="?/signup"
+						type="submit"
 						disabled={!passwordsMatch}
 					>
 						Sign up
 					</button>
+					<div class="flex flex-col items-left gap-2 order-1">
+						<p>my mistake,</p>
+						<button class="btn btn-outline" onclick={() => (signUpActive = false)}> go back</button>
+					</div>
+					
 				</div>
 			</div>
 		{:else}
 			<div class="flex gap-4 mt-4 items-end justify-between w-full">
-				<div class="flex flex-col items-left gap-2">
+				<button class="btn btn-primary order-2" formaction="?/login" type="submit"> Log in </button>
+				<div class="flex flex-col items-left gap-2 order-1">
 					<p>no account yet?</p>
 					<button class="btn btn-outline" onclick={() => (signUpActive = true)}> Sign up </button>
 				</div>
-				<button class="btn btn-primary btn-outline"> Log in </button>
 			</div>
 		{/if}
 	</form>

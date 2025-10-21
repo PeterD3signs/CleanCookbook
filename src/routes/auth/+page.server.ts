@@ -13,8 +13,10 @@ export const actions: Actions = {
       //console.error(error)
       return fail(400, { error: error.message });
     } else {
-      redirect(303, '/')
+      //console.log(data.user)
+      redirect(303, '/auth/confirm-your-email');
     }
+    
   },
   login: async ({ request, locals: { supabase } }) => {
     const formData = await request.formData()
