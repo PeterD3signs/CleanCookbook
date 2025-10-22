@@ -3,44 +3,44 @@ app in dev stage
 TODO:
 
 1. User Screen
-[ ] add password change
-[ ] add email change
-[ ] add account deletion
-[ ] add shortcuts to the recipes, the shopping cart and the planner
-[ ] add statistics
+- add password change
+- add email change
+- add account deletion
+- add shortcuts to the recipes, the shopping cart and the planner
+- add statistics
 
 2. Recipes
-[ ] add filters and browsing
-[ ] add own recepies marker
-[ ] implement adding recipes to the planner
-[ ] implement adding recipes to the shopping cart
-[ ] add notice about how adding to the shopping cart via planner differs to adding to the shopping cart directly
-[ ] implement adding recipes to favourites
+- add filters and browsing
+- add own recepies marker
+- implement adding recipes to the planner
+- implement adding recipes to the shopping cart
+- add notice about how adding to the shopping cart via planner differs to adding to the shopping cart directly
+- implement adding recipes to favourites
 
 4. Planner
-[ ] add moving recipes between days
-[ ] add deleting recipes
-[ ] add adding recipes to the shopping cart
+- add moving recipes between days
+- add deleting recipes
+- add adding recipes to the shopping cart
 
-5. Shopping cart
-[ ] add functionality for handling products
-[ ] add multiple shopping carts
+6. Shopping cart
+- add functionality for handling products
+- add multiple shopping carts
 
-6. UI
-[ ] make fonts consistent
-[ ] make spacing reactive and consistent
-[ ] make text reactive size consistent
-[ ] make a mobile version
-[ ] make a dark / light mode switch
+8. UI
+- make fonts consistent
+- make spacing reactive and consistent
+- make text reactive size consistent
+- make a mobile version
+- make a dark / light mode switch
 
-8. Supabase
-[ ] add tables
-[ ] populate them with recipes
+9. Supabase
+- add tables
+- populate them with recipes
 
-9. Other
-[ ] configure the mailing service
-[ ] make fallback recipes more real (low priority)
-[ ] make a cookie announcement + selection screen
+10. Other
+- configure the mailing service
+- make fallback recipes more real (low priority)
+- make a cookie announcement + selection screen
 
 DONE:
 
