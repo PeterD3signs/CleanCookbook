@@ -44,20 +44,20 @@ TODO:
 
 DONE:
 
-[x] App skeleton
-[x] About page
-[x] Main page layout
-[x] Logging in
-[x] Signing up (together with e-mail verification)
-[x] UI for logging / signing in
-[x] UI for displaying recipe details
-[x] Fallback recipes (for when the server is unreachable)
-[x] AI gen text and images for fallback recipes
-[x] Icons for various buttons / functionality
-[x] Configured themes
+- App skeleton
+- About page
+- Main page layout
+- Logging in
+- Signing up (together with e-mail verification)
+- UI for logging / signing in
+- UI for displaying recipe details
+- Fallback recipes (for when the server is unreachable)
+- AI gen text and images for fallback recipes
+- Icons for various buttons / functionality
+- Configured themes
 
 NOTES:
-- The most demanding task thus far was understanding hwo the authorization works and how to connect SSR (Server Side Rendering) with CSR (Client Side Rendering). Supabase documentation is a tad sparse, which, compared with lack of resources about the new version of the Svelte framework, was a real struggle ...But, exactly for that same reason, it was great fun to figure it out and make it work correctly (and safely + reliably)!
+The most demanding task thus far was understanding hwo the authorization works and how to connect SSR (Server Side Rendering) with CSR (Client Side Rendering). Supabase documentation is a tad sparse, which, compared with lack of resources about the new version of the Svelte framework, was a real struggle ...But, exactly for that same reason, it was great fun to figure it out and make it work correctly (and safely + reliably)!
 
 
 
